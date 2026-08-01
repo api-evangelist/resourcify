@@ -1,7 +1,30 @@
 aid: resourcify
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/resourcify.png
 name: Resourcify
-description: Resourcify is a company surfaced as a portfolio company of speedinvest and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Resourcify (Resourcify GmbH) is a Hamburg, Germany based digital platform for
+  waste management and circular-economy operations, describing itself as "the
+  operating system for a circular future." Its cloud software helps enterprises
+  digitize and optimize their waste streams end to end - automating waste and
+  recycling operations, optimizing cost, CO2 and recycling rates, tracking
+  compliance, and running take-back systems - across manufacturing, construction,
+  retail, healthcare, and airports. The platform connects waste producers with a
+  network of recyclers and haulers, captures waste data and documentation, and
+  reports on sustainability and material recovery. Resourcify is backed by
+  Speedinvest. As of this profile the company exposes no public developer API,
+  API documentation, or developer portal; integrations are delivered as managed
+  connections rather than a self-serve API.
 url: https://raw.githubusercontent.com/api-evangelist/resourcify/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Waste Management
+- Recycling
+- Circular Economy
+- Sustainability
+- ESG
+- Supply Chain
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/resourcify-domain-security.yml
+- type: Website
+  url: https://www.resourcify.com
+- type: Blog
+  url: https://www.resourcify.com/blog
+- type: Pricing
+  url: https://www.resourcify.com/pricing
+- type: Login
+  url: https://app.resourcify.com
+- type: Support
+  url: https://www.resourcify.com/contact
+- type: TermsOfService
+  url: https://www.resourcify.com/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.resourcify.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
